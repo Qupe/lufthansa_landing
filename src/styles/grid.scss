@@ -1,0 +1,51 @@
+@import "variables";
+@import "helpers";
+
+.container {
+    margin: auto;
+    box-sizing: border-box;
+    padding-left: floor(($grid-gutter-width / 2));
+    padding-right: ceil(($grid-gutter-width / 2));
+    @include clearfix;
+    @media ($larger-than-phablet) {
+        width: $container-width;
+    }
+
+  &_full {
+    width: 100%;
+  }
+}
+
+.grid {
+    margin-left: ceil(($grid-gutter-width / -2));
+    margin-right: floor(($grid-gutter-width / -2));
+    @include clearfix;
+}
+
+%span {
+    position: relative;
+    min-height: 1px;
+    padding-left:  ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+
+@for $i from 1 through $grid-total-columns {
+    .span-#{$i} {
+        @extend %span;
+        @media ($larger-than-phablet) {
+            width: percentage(($i / $grid-total-columns));
+        }
+
+    }
+}
+
+@for $i from 1 through $grid-total-columns {
+    .offset-#{$i} {
+        @media ($larger-than-phablet) {
+            margin-left: percentage(($i / $grid-total-columns));
+        }
+    }
+}

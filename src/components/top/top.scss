@@ -1,0 +1,92 @@
+@import "../../styles/variables";
+
+.top {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+
+  &__overlay {
+    background: rgba(#494747, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+  }
+
+  &__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: fill;
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    &-brands {
+      background: #fff;
+      box-sizing: border-box;
+      margin: 24px auto 0;
+      display: table;
+      width: 100%;
+
+      &-logo {
+        vertical-align: middle;
+        display: table-cell;
+        padding: 15px;
+        box-sizing: border-box;
+        width: 33%;
+
+        &-forbes {
+          width: 100px;
+        }
+
+        &-miles {
+          width: 150px;
+        }
+
+        &-lufthansa {
+          width: 186px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 95px;
+    right: 0;
+    left: 0;
+
+    &-title {
+      font-size: 70px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 16px;
+      font-family: 'AkzidenzGroteskPro-Super', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      line-height: 0.9;
+    }
+
+    &-annotation {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 0;
+      font-family: 'AkzidenzGroteskPro-Bold', Arial, Helvetica, sans-serif;
+    }
+  }
+}

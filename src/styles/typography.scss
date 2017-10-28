@@ -1,0 +1,46 @@
+@import "./variables";
+
+h1.heading {
+  font-size: 36px;
+  color: $brand-blue;
+  margin: 33px 0;
+  font-family: 'HelveticaDLHCGH-Medium', Arial, Helvetica, sans-serif;
+  margin-left: -$grid-gutter-width;
+}
+
+p.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 30px;
+  font-family: 'Lora-Regular', Arial, Helvetica, sans-serif;
+  margin-left: -$grid-gutter-width;
+  max-width: 90%;
+}
+
+blockquote.quote {
+  margin: 76px 0;
+  color: $brand-blue;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Lora-Regular', Arial, Helvetica, sans-serif;
+  max-width: 270px;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 15px;
+    background: url('./assets/quote-left_orange.svg') no-repeat center;
+    margin-bottom: 10px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 15px;
+    background: url('./assets/quote-right_orange.svg') no-repeat center;
+    margin-top: 10px;
+  }
+}

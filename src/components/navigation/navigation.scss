@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.navigation {
+  display: table;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  /*position: absolute;
+  top: 131px;
+  width: 1005px;
+  left: 0;
+  right: 0;*/
+
+  .active {
+    background: $brand-yellow;
+  }
+
+  &_fixed {
+    max-width: 1005px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border: 1px solid #ccc;
+    border-top: 0;
+    box-shadow: 0 0 4px #ccc;
+  }
+
+  .navigation__link {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #cecece;
+    color: #000066;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 7px 0;
+    font-family: "HelveticaDLHCGH-Roman", Arial, Helvetica, sans-serif;
+
+    &:hover {
+      background: $brand-yellow;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.fp-viewing-igor-card .navigation .navigation__link[href='#igor-card'],
+.fp-viewing-igor-story .navigation .navigation__link[href='#igor-card'],
+.fp-viewing-igor-stat .navigation .navigation__link[href='#igor-card'],
+.fp-viewing-boris-card .navigation .navigation__link[href='#boris-card'],
+.fp-viewing-boris-story .navigation .navigation__link[href='#boris-card'],
+.fp-viewing-boris-stat .navigation .navigation__link[href='#boris-card'],
+.fp-viewing-alex-card .navigation .navigation__link[href='#alex-card'],
+.fp-viewing-alex-story .navigation .navigation__link[href='#alex-card'],
+.fp-viewing-alex-stat .navigation .navigation__link[href='#alex-card'],
+.fp-viewing-about .navigation .navigation__link[href='#about']
+{
+  background: $brand-yellow;
+}

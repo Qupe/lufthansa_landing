@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.story {
+  a {
+    color: $brand-blue;
+  }
+
+  &__photo {
+    max-width: 270px;
+    margin-left: -$grid-gutter-width;
+  }
+}

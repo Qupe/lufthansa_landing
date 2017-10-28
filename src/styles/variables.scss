@@ -1,0 +1,16 @@
+$max-width: 1025px !default;
+
+$brand-blue: #000066 !default;
+$brand-yellow: #ffb300 !default;
+$brand-black: #131313 !default;
+$brand-gray: #979797 !default;
+
+$larger-than-mobile    : "min-width: 400px" !default;
+$larger-than-phablet   : "min-width: 550px" !default;
+$larger-than-tablet    : "min-width: 750px" !default;
+$larger-than-desktop   : "min-width: 1000px" !default;
+$larger-than-desktophd : "min-width: 1200px" !default;
+
+$container-width: 1025px !default;
+$grid-total-columns: 12 !default;
+$grid-gutter-width: 20px !default;

@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+.ignore {
+  height: 0px !important;
+}
+
+.about {
+
+  &__heading {
+    font-size: 36px;
+    color: $brand-blue;
+    margin: 33px 0;
+    font-family: 'HelveticaDLHCGH-Medium', Arial, Helvetica, sans-serif;
+    margin-left: -$grid-gutter-width;
+
+    &_big {
+      font-size: 45px !important;
+    }
+  }
+
+  &__link {
+    color: $brand-blue;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 30px;
+    font-family: 'Lora-Regular', Arial, Helvetica, sans-serif;
+    margin-left: -$grid-gutter-width;
+
+  }
+
+  &__wrap {
+    overflow: hidden;
+    margin-left: -$grid-gutter-width;
+  }
+
+  &__button {
+    background: $brand-blue;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    width: 150px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'HelveticaDLHCGH-Medium', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+}
