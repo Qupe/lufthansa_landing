@@ -2,7 +2,8 @@
   <div class="footer section fp-auto-height" data-anchor="footer">
     <div class="container">
       <div class="grid">
-        <div class="span-12 text-right">
+        <div class="span-4">Партнёрский проект</div>
+        <div class="span-8 text-right">
           <a
             href="http://www.lufthansa.com/ru/ru/Help-and-Contact?displayAll=true&contactChannelIndex=0&sourceTaxonomy=Homepage2014"
             target="_blank">Контактная информация</a>
