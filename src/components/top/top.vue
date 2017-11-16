@@ -19,6 +19,7 @@
                 <a href="https://www.lufthansa.com/online/portal/lh/ru/homepage" target="_blank">
                   <img class="top__header-brands-logo-lufthansa" src="../../assets/lufthansa-logo.svg" alt="">
                 </a>
+                <small>Партнерский проект*</small>
               </div>
             </div>
           </div>

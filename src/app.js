@@ -55,7 +55,6 @@ export default {
         this.distance -= 4.55
         this.mile = this.heroes[hero].miles[index]
       }
-      console.log(Math.round(this.distance))
     }
   },
   data () {
